@@ -1,0 +1,90 @@
+﻿@model HRM.Models.jb_applicant_register
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>jb_applicant_register</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.jb_app_no)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.jb_app_no)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.jb_email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.jb_email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.jb_applicant_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.jb_applicant_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.jb_app_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.jb_app_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.jb_email_ack)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.jb_email_ack)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.jb_resp_ack)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.jb_resp_ack)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.jb_app_pwd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.jb_app_pwd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.jb_email_desc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.jb_email_desc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.jb_tel_no)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.jb_tel_no)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.regId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

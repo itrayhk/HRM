@@ -1,0 +1,96 @@
+﻿@model HRM.Models.jb_applicant_register
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>jb_applicant_register</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.jb_app_no)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.jb_app_no)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.jb_email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.jb_email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.jb_applicant_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.jb_applicant_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.jb_app_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.jb_app_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.jb_email_ack)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.jb_email_ack)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.jb_resp_ack)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.jb_resp_ack)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.jb_app_pwd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.jb_app_pwd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.jb_email_desc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.jb_email_desc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.jb_tel_no)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.jb_tel_no)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

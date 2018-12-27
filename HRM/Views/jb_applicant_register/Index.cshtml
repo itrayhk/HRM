@@ -1,0 +1,84 @@
+﻿@model IEnumerable<HRM.Models.jb_applicant_register>
+
+@{
+    ViewBag.Title = "Applicant List";
+}
+
+@Styles.Render("~/styles/regcss.css")
+
+<p></p>
+<div class="well well-sm">Applicant List</div>
+<p>
+    @Html.ActionLink("Add New", "Create", null, new { @class = "btn btn-primary btn-xs" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Application No.
+        </th>
+        <th>
+            Applicant<br />
+            Email
+        </th>
+        <th>
+            Name
+        </th>
+        <th>
+            Tel.
+        </th>
+        <th>
+            Application Date
+        </th>
+        <th>
+            Send Email <br />
+            Acknowledgement (Y/N)
+        </th>
+        <th>
+            Applicant <br />
+            Register (Y/N)
+        </th>
+        <th>
+            Applicant <br />
+            Password
+        </th>
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.jb_app_no)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.jb_email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.jb_applicant_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.jb_tel_no)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.jb_app_date, "{0:d}")
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.jb_email_ack)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.jb_resp_ack)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.jb_app_pwd)
+            </td>
+
+
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.regId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.regId })
+            </td>
+        </tr>
+    }
+
+</table>

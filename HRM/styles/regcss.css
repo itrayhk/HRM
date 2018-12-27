@@ -1,0 +1,25 @@
+﻿
+
+th {
+    font-size: 12px;
+    border: 0;
+    vertical-align: middle;
+    padding: 0px 0px 0px 4px !important;
+    color: black;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+td {
+
+    font-size: 12px;
+    border: 0;
+    vertical-align: middle;
+    color: black;
+    padding: 0px 0px 0px 4px !important;
+}
+
+
+h3 {
+    color: red;
+}
+    
