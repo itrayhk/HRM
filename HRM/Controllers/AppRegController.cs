@@ -14,7 +14,7 @@ namespace HRM.Controllers
     {
         private AppReg db = new AppReg();
 
-        int test = 0;
+        int test = 20;
 
         // GET: AppReg
         public ActionResult Index()
